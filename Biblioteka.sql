@@ -34,7 +34,7 @@ CREATE TABLE `Выдача` (
   `дата` date NOT NULL,
   `дата_возврата_план` date NOT NULL,
   `дата_возврата_факт` date DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Дамп данных таблицы `Выдача`
@@ -64,7 +64,7 @@ CREATE TABLE `Издание` (
   `ID` int NOT NULL,
   `Наименование` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8_general_ci NOT NULL,
   `Автор` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8_general_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Дамп данных таблицы `Издание`
