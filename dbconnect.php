@@ -13,7 +13,7 @@ if ( file_exists(dirname(__FILE__).'/vendor/autoload.php') ) {
     }
     // подключение к БД
     try {
-        $conn = new PDO("mysql:host=$_ENV[dbhost];dbname=$_ENV[dbname]", $_ENV['dbuser'], $_ENV['NO']);
+        $conn = new PDO("mysql:host=$_ENV[localhost];dbname=$_ENV[dbname]", $_ENV['dbuser'], $_ENV['NO']);
         // set the PDO error mode to exception
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         }
